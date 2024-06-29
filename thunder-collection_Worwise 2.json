@@ -1,0 +1,325 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Worwise 2",
+    "dateExported": "2024-06-29T01:24:57.120Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b9a14e1e-3ebe-4173-b6f2-f18710e00189",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-06-28T07:32:31.831Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a4ea2a8c-0fd9-4f3d-b428-2e8cdab1db02",
+            "name": "profession",
+            "containerId": "",
+            "created": "2024-06-28T07:34:54.643Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e2d78cdc-c820-4630-b356-27c8ce3da401",
+            "name": "Employer",
+            "containerId": "",
+            "created": "2024-06-28T17:24:59.257Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "cc460c0f-8469-4e1c-973a-8533d1bce416",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "b9a14e1e-3ebe-4173-b6f2-f18710e00189",
+            "name": "register",
+            "url": "localhost:2880/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-28T07:07:30.618Z",
+            "modified": "2024-06-28T23:16:18.550Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Fabricio"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Teleguario"
+                    },
+                    {
+                        "name": "username",
+                        "value": "LLopez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "Huevos 2"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "53273218"
+                    },
+                    {
+                        "name": "locality",
+                        "value": "Ciudad de Quetzaltenango"
+                    },
+                    {
+                        "name": "profession",
+                        "value": "Arquitecto"
+                    },
+                    {
+                        "name": "role",
+                        "value": "Empleador"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4c85d80-69a8-4eb5-abfb-50c58b23a76c",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "b9a14e1e-3ebe-4173-b6f2-f18710e00189",
+            "name": "Delete",
+            "url": "localhost:2880/user/deleteUser/667e6890cebd5826f481ec42",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-06-28T07:10:54.114Z",
+            "modified": "2024-06-28T07:40:06.924Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjdlNjY5ZmNlYmQ1ODI2ZjQ4MWVjMjQiLCJ1c2VybmFtZSI6IkJvcGV6IiwibmFtZSI6IkJ5cm9uICIsInJvbGUiOiJFbXBsZWFkb3IiLCJpYXQiOjE3MTk1NTk4OTQsImV4cCI6MTcxOTU3MDY5NH0.1nXgtJ1O3-Wte1OHs3qd4q4loHKn-BQb7fj7LQxBAT0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "53bbb192-89b1-4d3d-8c61-d7bc1fddc353",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "b9a14e1e-3ebe-4173-b6f2-f18710e00189",
+            "name": "Login",
+            "url": "localhost:2880/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-28T07:16:40.641Z",
+            "modified": "2024-06-28T07:31:34.436Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Bopez"
+                    },
+                    {
+                        "name": "name",
+                        "value": "Byron"
+                    },
+                    {
+                        "name": "role",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b1474d8b-05c0-45f4-b077-e25ad5dab35a",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "a4ea2a8c-0fd9-4f3d-b428-2e8cdab1db02",
+            "name": "saveProfession",
+            "url": "localhost:2880/profession/saveProfession",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-28T07:35:05.174Z",
+            "modified": "2024-06-28T22:55:44.199Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Programs"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Desarrollador de Software"
+                    },
+                    {
+                        "name": "user",
+                        "value": "667e669fcebd5826f481ec24"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6acd5811-4149-4763-a724-85727bcc5c35",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "a4ea2a8c-0fd9-4f3d-b428-2e8cdab1db02",
+            "name": "update",
+            "url": "localhost:2880/profession/updateProfession/667f3f71ab450b6cc9451dcf",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-06-28T07:44:00.496Z",
+            "modified": "2024-06-28T22:56:24.444Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Doctor"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Hola  1"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4ff01a72-d564-4259-bae3-13b4f4857e6e",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "a4ea2a8c-0fd9-4f3d-b428-2e8cdab1db02",
+            "name": "delete",
+            "url": "localhost:2880/profession/deleteProfession/667f3f02ab450b6cc9451dca",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-06-28T07:49:21.924Z",
+            "modified": "2024-06-28T23:05:18.658Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "63404985-7600-415c-8766-60ce28b48d6a",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "a4ea2a8c-0fd9-4f3d-b428-2e8cdab1db02",
+            "name": "get",
+            "url": "localhost:2880/profession/getProfession",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-06-28T07:50:04.833Z",
+            "modified": "2024-06-28T22:57:37.875Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c96110be-9d1a-46d5-8cee-46cda1d56d43",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "e2d78cdc-c820-4630-b356-27c8ce3da401",
+            "name": "saveEmployer",
+            "url": "localhost:2880/employer/saveEmployer",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-06-28T17:28:55.160Z",
+            "modified": "2024-06-28T22:31:12.733Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjdlNjY5ZmNlYmQ1ODI2ZjQ4MWVjMjQiLCJ1c2VybmFtZSI6IkJvcGV6IiwibmFtZSI6IkJ5cm9uICIsInJvbGUiOiJFbXBsZWFkb3IiLCJpYXQiOjE3MTk1OTY5NDYsImV4cCI6MTcxOTYwNzc0Nn0.7Q8WcFso_SPwajM4ppAyfIeWQY3rCLyqn-TI9AHWkEM",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "companyName",
+                        "value": "jaska "
+                    },
+                    {
+                        "name": "descriptionCompany",
+                        "value": "jhaja"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "10102020"
+                    },
+                    {
+                        "name": "user",
+                        "value": "667e669fcebd5826f481ec24"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5a7a5c57-2e08-446f-a0b8-42e16d4a38d7",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "e2d78cdc-c820-4630-b356-27c8ce3da401",
+            "name": "update",
+            "url": "localhost:2880/employer/updateEmployer/667f39b2fcdfdcd6dd6bafd2",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-06-28T18:23:41.820Z",
+            "modified": "2024-06-28T22:33:45.813Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "companyName",
+                        "value": "jsij"
+                    },
+                    {
+                        "name": "descriptionCompany",
+                        "value": "Pollo "
+                    },
+                    {
+                        "name": "phone",
+                        "value": "40405050"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "15b78d6d-d1b3-48e7-b9b3-6e03f414344e",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "e2d78cdc-c820-4630-b356-27c8ce3da401",
+            "name": "delete",
+            "url": "localhost:2880/employer/delteEmployer/667f39b2fcdfdcd6dd6bafd2",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-06-28T18:27:07.042Z",
+            "modified": "2024-06-28T22:35:02.247Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "70458c36-ead0-4bfb-a705-ec94cc61c651",
+            "colId": "5978991b-528f-4074-8dc3-a01357bb8c3d",
+            "containerId": "e2d78cdc-c820-4630-b356-27c8ce3da401",
+            "name": "get",
+            "url": "localhost:2880/employer/getEmployer",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-06-28T18:28:15.704Z",
+            "modified": "2024-06-28T18:28:36.517Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
